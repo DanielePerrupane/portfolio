@@ -1,0 +1,35 @@
+body, html {
+    margin: 0; /* Rimosso margin errato */
+    padding: 0;
+    height: 100%; /* Assicura che il body copra l'intera altezza della finestra */
+}
+
+.box {
+    display: flex;
+    height: 100%; /* Fa sì che la box occupi l'intera altezza */
+    padding: 0; /* Rimosso padding errato */
+}
+
+.vertical-line {
+    width: 1px;
+     /* Altezza della linea che copre l'intera altezza del contenitore */
+    background-color: gray;
+    margin: 0 5px; /* Aggiunge un po' di spazio a sinistra e a destra della linea */
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+}
+
+.left {
+    width: 28%;
+    height: 100%; /* Altezza fissa per la sezione sinistra */
+    
+}
+
+.right {
+    width: 71%;
+    height: 100%; /* Altezza fissa per far scorrere il contenuto */
+    
+    overflow-y: auto; /* Abilita lo scrolling verticale */
+    background-color: #ffffff; /* Colore di sfondo opzionale */
+}
